@@ -1,8 +1,8 @@
 -runrequires: \
-	osgi.identity;filter:='(osgi.identity=com.example.eval.rhino.provider)',\
-	osgi.identity;filter:='(osgi.identity=com.example.eval.simple.provider)',\
-	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
-	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)'
+	bnd.identity;id='org.apache.felix.gogo.shell',\
+	bnd.identity;id='com.example.eval.rhino.provider',\
+	bnd.identity;id='com.example.eval.simple.provider',\
+	bnd.identity;id='org.apache.felix.gogo.command'
 -runbundles: \
 	com.example.eval.api;version=snapshot,\
 	com.example.eval.rhino.provider;version=snapshot,\
